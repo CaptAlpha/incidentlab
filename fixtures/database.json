@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp": "2026-10-28T10:00:00Z",
+    "severity": "INFO",
+    "resource": {
+      "type": "cloudsql_database",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "orders-db",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "Connection pool baseline",
+      "connections_percent": 42,
+      "cpu_percent": 35
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:03:00Z",
+    "severity": "INFO",
+    "resource": {
+      "type": "cloudsql_database",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "orders-db",
+        "location": "asia-south1"
+      }
+    },
+    "protoPayload": {
+      "serviceName": "cloudsql.googleapis.com",
+      "methodName": "cloudsql.instances.update",
+      "authenticationInfo": {
+        "principalEmail": "release-bot@incidentlab-local.iam.gserviceaccount.com"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:06:00Z",
+    "severity": "WARNING",
+    "resource": {
+      "type": "cloudsql_database",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "orders-db",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "Connection utilization exceeded threshold",
+      "connections_percent": 97,
+      "cpu_percent": 92
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:08:00Z",
+    "severity": "ERROR",
+    "resource": {
+      "type": "cloudsql_database",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "orders-db",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "Remaining connection slots exhausted",
+      "connections_percent": 99,
+      "cpu_percent": 95
+    }
+  }
+]

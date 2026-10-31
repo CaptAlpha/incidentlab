@@ -1,0 +1,106 @@
+[
+  {
+    "timestamp": "2026-10-28T10:00:00Z",
+    "severity": "INFO",
+    "resource": {
+      "type": "cloud_run_revision",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "checkout-api",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "Healthy request baseline",
+      "error_rate": 0.2,
+      "latency_ms": 120
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:02:00Z",
+    "severity": "INFO",
+    "resource": {
+      "type": "cloud_run_revision",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "checkout-api",
+        "location": "asia-south1"
+      }
+    },
+    "protoPayload": {
+      "serviceName": "run.googleapis.com",
+      "methodName": "google.cloud.run.v2.Services.UpdateService",
+      "authenticationInfo": {
+        "principalEmail": "release-bot@incidentlab-local.iam.gserviceaccount.com"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:04:00Z",
+    "severity": "ERROR",
+    "resource": {
+      "type": "cloud_run_revision",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "checkout-api",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "Request failures increased after revision checkout-0042",
+      "error_rate": 28.4,
+      "latency_ms": 3100
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:05:00Z",
+    "severity": "ERROR",
+    "resource": {
+      "type": "cloud_run_revision",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "checkout-api",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "Upstream deadline exceeded",
+      "error_rate": 31.1,
+      "latency_ms": 4500
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:06:00Z",
+    "severity": "INFO",
+    "resource": {
+      "type": "cloud_run_revision",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "catalog-api",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "Catalog request baseline",
+      "error_rate": 0.1,
+      "latency_ms": 85
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:07:00Z",
+    "severity": "ERROR",
+    "resource": {
+      "type": "cloud_run_revision",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "checkout-api",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "Request failures remain elevated",
+      "error_rate": 26.2,
+      "latency_ms": 2800
+    }
+  }
+]

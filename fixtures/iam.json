@@ -1,0 +1,68 @@
+[
+  {
+    "timestamp": "2026-10-28T10:00:00Z",
+    "severity": "INFO",
+    "resource": {
+      "type": "cloud_run_revision",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "invoice-worker",
+        "location": "asia-south1"
+      }
+    },
+    "protoPayload": {
+      "serviceName": "run.googleapis.com",
+      "methodName": "SetIamPolicy",
+      "authenticationInfo": {
+        "principalEmail": "release-bot@incidentlab-local.iam.gserviceaccount.com"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:03:00Z",
+    "severity": "ERROR",
+    "resource": {
+      "type": "cloud_run_revision",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "invoice-worker",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "PERMISSION_DENIED: storage.objects.get for invoice archive"
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:04:00Z",
+    "severity": "ERROR",
+    "resource": {
+      "type": "cloud_run_revision",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "invoice-worker",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "PERMISSION_DENIED: retry failed for invoice archive"
+    }
+  },
+  {
+    "timestamp": "2026-10-28T10:05:00Z",
+    "severity": "ERROR",
+    "resource": {
+      "type": "cloud_run_revision",
+      "labels": {
+        "project_id": "incidentlab-local",
+        "service_name": "invoice-worker",
+        "location": "asia-south1"
+      }
+    },
+    "jsonPayload": {
+      "message": "Invoice processing requests failed",
+      "error_rate": 18.2,
+      "latency_ms": 900
+    }
+  }
+]

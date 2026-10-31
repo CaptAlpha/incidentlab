@@ -1,0 +1,6 @@
+[project]
+name = "incidentlab"
+version = "1.0.0"
+description = "Evidence-grounded investigation of GCP-format incident telemetry"
+requires-python = ">=3.9"
+dependencies = []
